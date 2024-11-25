@@ -7,7 +7,7 @@ public class Main {
         EmployeeAttendance employeeAttendance = new EmployeeAttendance();
         CalculateEmployeeWage calculateEmployeeWage = new CalculateEmployeeWage();
                 int attendance=employeeAttendance.getAttendance();
-              calculateEmployeeWage.calculateEmployeeWage(attendance);
+             System.out.print("Daily wage " +calculateEmployeeWage.calculateEmployeeWage(attendance));
 
     }
 }
