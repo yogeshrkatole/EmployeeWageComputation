@@ -5,7 +5,9 @@ public class Main {
         System.out.println("Welcome to Employee Wage Computation");
 
         EmployeeAttendance employeeAttendance = new EmployeeAttendance();
-                employeeAttendance.printAttendance();
+        CalculateEmployeeWage calculateEmployeeWage = new CalculateEmployeeWage();
+                int attendance=employeeAttendance.getAttendance();
+              calculateEmployeeWage.calculateEmployeeWage(attendance);
 
     }
 }
