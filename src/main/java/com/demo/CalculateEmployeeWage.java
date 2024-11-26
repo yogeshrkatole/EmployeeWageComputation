@@ -8,14 +8,18 @@ public class CalculateEmployeeWage {
     public int calculateEmployeeWage(int attendance) {
         int workingHrs=0;
 
-        if(attendance==1){
-            System.out.println("Employee is present");
-            workingHrs=Full_Day_Hrs;
-        }else if(attendance==2){
-            System.out.println("Employee doing part time ");
-            workingHrs=Part_Time_Hrs;
-        }else{
-            System.out.println("Employee is absent");
+        switch(attendance){
+            case 0:
+                System.out.println("Employee is absent");
+                break;
+            case 1:
+                   System.out.println("Employee is present");
+                   workingHrs=Full_Day_Hrs;
+                   break;
+            case 2:
+                   System.out.println("Employee doing part time ");
+                   workingHrs=Part_Time_Hrs;
+                   break;
         }
 
         return workingHrs*Wage_Per_Hrs;
